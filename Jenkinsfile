@@ -12,6 +12,11 @@ pipeline {
         sh './a.out'
       }
     }
+    stage('Deploy'){
+      steps{
+        sh '/departent/services'
+      }
+    }
   }
   post {
     failure {
